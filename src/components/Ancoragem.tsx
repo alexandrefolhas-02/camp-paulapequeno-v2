@@ -156,7 +156,7 @@ export default function Ancoragem() {
               QUERO SER ATLETA FUNDADORA →
             </button>
             
-            <div className="mt-3 flex items-center justify-center gap-1.5 text-xs text-gray-400 font-medium">
+            <div className="mt-3 flex items-center justify-center gap-1.5 text-xs text-gray-300 font-medium">
               <Lock className="w-3.5 h-3.5 flex-shrink-0" strokeWidth={2} />
               <span>Pagamento seguro via PagBank</span>
             </div>

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'motion/react'
+import { AlertTriangle } from 'lucide-react'
 import { trackEvent } from '@/lib/utils'
 import { CONFIG } from '@/lib/config'
 import { VAGAS_CONFIG } from '@/data/vagas'
@@ -57,9 +58,9 @@ export default function StickyUrgencyBar() {
             
             {/* Esquerda */}
             <div className="flex items-center gap-2 font-semibold text-sm md:text-base min-w-0">
-              <span>⚠️</span> 
+              <AlertTriangle className="w-4 h-4 text-black" strokeWidth={2.5} />
               <span className="truncate">
-                ATLETA FUNDADOR: restam <span className="font-bold underline">{VAGAS_CONFIG.fundador.disponiveis}</span> de 30 vagas
+                ATLETA FUNDADOR: restam <span className="font-bold underline">{VAGAS_CONFIG.fundador.disponiveis}</span> de {VAGAS_CONFIG.fundador.total} vagas
               </span>
             </div>
             

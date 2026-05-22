@@ -123,7 +123,7 @@ export default function KitAtleta() {
                     <h3 className="text-base md:text-lg font-semibold text-white">
                       {item.title}
                     </h3>
-                    <p className="text-sm text-gray-400 mt-1">
+                    <p className="text-sm text-gray-300 mt-1">
                       {item.desc}
                     </p>
                   </div>
@@ -173,7 +173,7 @@ export default function KitAtleta() {
 
           <div className="mt-8 pt-6 border-t border-gold-500/20 flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="text-sm text-gold-400 font-medium">
-              {VAGAS_CONFIG.fundador.disponiveis} de 30 vagas restantes
+              {VAGAS_CONFIG.fundador.disponiveis} de {VAGAS_CONFIG.fundador.total} vagas restantes
             </div>
             
             <button 

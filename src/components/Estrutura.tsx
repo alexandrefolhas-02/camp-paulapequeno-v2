@@ -1,4 +1,5 @@
 import { motion } from 'motion/react'
+import { MapPin } from 'lucide-react'
 
 export default function Estrutura() {
   return (
@@ -34,7 +35,7 @@ export default function Estrutura() {
           </p>
 
           <div className="mt-8 p-5 border border-gold-600/30 bg-black-main rounded-xl flex gap-4 items-start shadow-md">
-            <span className="text-gold-500 text-2xl">📍</span>
+            <div className="text-2xl mt-1"><MapPin className="w-6 h-6 text-gold-500" strokeWidth={2} /></div>
             <div>
               <div className="text-xs text-gold-500 tracking-widest font-semibold uppercase">
                 LOCALIZAÇÃO PRIVILEGIADA

@@ -119,7 +119,7 @@ export default function BlocoRevelacao() {
             </div>
           ) : (
             <div className="w-full h-full flex items-center justify-center bg-black-main">
-              <p className="text-gray-500 italic">Iframe do YouTube/Vimeo entrará aqui</p>
+              <p className="text-gray-400 italic">Iframe do YouTube/Vimeo entrará aqui</p>
               {/* <iframe src="..." loading="lazy" /> */}
             </div>
           )}

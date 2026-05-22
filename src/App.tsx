@@ -13,6 +13,7 @@ import Investimento from '@/components/Investimento'
 import FAQ from '@/components/FAQ'
 import UltimaChamada from '@/components/UltimaChamada'
 import Footer from '@/components/Footer'
+import Divider from '@/components/Divider'
 
 function App() {
   return (
@@ -20,17 +21,23 @@ function App() {
       <StickyUrgencyBar />
       <main>
         <Hero />
+        <Divider />
         <BlocoDor />
         <BlocoRevelacao />
+        <Divider />
         <PorQueAPaula />
         <ParaQuemE />
         <Transformacao />
+        <Divider />
         <Experiencia3Dias />
         <Estrutura />
+        <Divider />
         <KitAtleta />
         <Ancoragem />
+        <Divider />
         <Investimento />
         <FAQ />
+        <Divider />
         <UltimaChamada />
       </main>
       <Footer />

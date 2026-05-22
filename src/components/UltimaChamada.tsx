@@ -94,7 +94,7 @@ export default function UltimaChamada() {
                   ATLETA FUNDADOR
                 </div>
                 <div className="mt-1 text-lg md:text-xl text-white font-bold min-w-0 flex-wrap">
-                  {VAGAS_CONFIG.fundador.disponiveis} de 30 vagas ainda esperando.
+                  {VAGAS_CONFIG.fundador.disponiveis} de {VAGAS_CONFIG.fundador.total} vagas ainda esperando.
                 </div>
               </div>
             </div>

@@ -24,10 +24,10 @@ export default function Footer() {
             <h2 className="font-display text-2xl font-bold text-gold-500">
               ELITE CAMP
             </h2>
-            <p className="mt-1 text-sm text-gray-400">
+            <p className="mt-1 text-sm text-gray-300">
               Paula Pequeno
             </p>
-            <p className="mt-4 text-sm text-gray-400 leading-relaxed min-w-0 flex-wrap pr-0 md:pr-4">
+            <p className="mt-4 text-sm text-gray-300 leading-relaxed min-w-0 flex-wrap pr-0 md:pr-4">
               A primeira edição oficial. 60 atletas. 3 dias. 1 transformação que pode mudar a forma como sua filha enxerga o esporte — e a si mesma.
             </p>
           </div>
@@ -87,11 +87,11 @@ export default function Footer() {
 
         {/* LINHA FINAL */}
         <div className="mt-8 flex flex-col md:flex-row items-center justify-between gap-4 min-w-0 w-full text-center md:text-left">
-          <div className="text-xs text-gray-500 min-w-0 flex-wrap">
+          <div className="text-xs text-gray-400 min-w-0 flex-wrap">
             © 2026 Paula Pequeno Elite Camp. Todos os direitos reservados.
           </div>
           
-          <div className="flex items-center justify-center gap-6 text-xs text-gray-500 flex-wrap min-w-0">
+          <div className="flex items-center justify-center gap-6 text-xs text-gray-400 flex-wrap min-w-0">
             <a href="#" className="hover:text-gold-400 transition-colors">
               Política de Privacidade
             </a>
