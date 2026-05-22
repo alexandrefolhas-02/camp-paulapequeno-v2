@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold-500: #F4C430;
+  --color-gold-600: #D4A017;
+  --color-black-main: #0a0a0a;
+  --color-black-secondary: #1a1a1a;
+  --color-red-urgency: #DC2626;
+  
+  /* Fallback fonts if specific family not provided yet */
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-display: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+@layer base {
+  html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+  
+  body {
+    background-color: var(--color-black-main);
+    color: white;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Framer Motion prefers-reduced-motion fallback */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
