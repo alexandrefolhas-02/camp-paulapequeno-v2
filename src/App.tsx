@@ -11,6 +11,8 @@ import KitAtleta from '@/components/KitAtleta'
 import Ancoragem from '@/components/Ancoragem'
 import Investimento from '@/components/Investimento'
 import FAQ from '@/components/FAQ'
+import UltimaChamada from '@/components/UltimaChamada'
+import Footer from '@/components/Footer'
 
 function App() {
   return (
@@ -29,7 +31,9 @@ function App() {
         <Ancoragem />
         <Investimento />
         <FAQ />
+        <UltimaChamada />
       </main>
+      <Footer />
     </>
   )
 }
