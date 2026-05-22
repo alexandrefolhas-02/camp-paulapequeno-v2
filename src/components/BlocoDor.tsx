@@ -1,11 +1,12 @@
 import { m } from 'motion/react'
+import { CheckCircle2 } from 'lucide-react'
 
 export default function BlocoDor() {
-  const dores = [
-    "Treinos repetitivos que não tiram ela do platô técnico",
-    "Falta de uma referência feminina de alto rendimento olhando nos olhos dela",
-    "Cansaço mental por não ter quem entenda a pressão de competir de verdade",
-    "A sensação de que ela tem potencial pra mais — mas não sabe pra onde direcionar",
+  const beneficios = [
+    "Treinos técnicos e táticos orientados com uma visão profissional.",
+    "Viver 3 dias com uma das maiores atletas de voleibol do mundo.",
+    "Aprender lições de liderança e vitória que formam campeões.",
+    "Receber dicas e orientações para conquistar todos seus sonhos no esporte.",
   ]
 
   return (
@@ -21,7 +22,7 @@ export default function BlocoDor() {
           transition={{ duration: 0.8 }}
         >
           Se você está aqui,<br />
-          é porque sabe.
+          esta é sua chance!
         </m.h2>
 
         <m.div
@@ -32,18 +33,19 @@ export default function BlocoDor() {
           className="mt-12"
         >
           <p className="text-xl text-gray-300 text-center">
-            Sabe que sua filha tem talento.<br />
-            Que ela treina, se dedica, sonha.
+            O esporte pode mudar a vida<br />
+            dos seus filhos!<br />
+            Ele(a) treina, se dedica, sonha.
           </p>
 
           <p className="mt-10 text-gold-500 font-semibold italic text-center text-xl">
-            Mas sabe também o que falta:
+            Mas você sente que falta algo a mais!
           </p>
         </m.div>
 
-        {/* Lista de Dores */}
+        {/* Lista de Benefícios */}
         <div className="mt-12 flex flex-col gap-6 max-w-2xl mx-auto">
-          {dores.map((dor, index) => (
+          {beneficios.map((beneficio, index) => (
             <m.div 
               key={index}
               className="flex items-start gap-4"
@@ -52,11 +54,9 @@ export default function BlocoDor() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 * (index + 1) }}
             >
-              <div className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-red-urgency flex items-center justify-center text-white font-bold text-xs">
-                X
-              </div>
+              <CheckCircle2 className="w-6 h-6 text-gold-500 flex-shrink-0 mt-1" strokeWidth={2} />
               <p className="text-white text-lg md:text-xl font-medium">
-                {dor}
+                {beneficio}
               </p>
             </m.div>
           ))}

@@ -38,7 +38,7 @@ export default function Hero() {
           
           <div className="max-w-2xl">
             <h1 className="font-display font-black text-4xl md:text-5xl lg:text-6xl leading-[1.1] text-white text-balance">
-              A escola que forma <span className="text-gold-500">campeãs olímpicas</span> abre as portas para <span className="text-gold-500">60 atletas</span>.
+              Paula Pequeno - <span className="text-gold-500">Bicampeã Olímpica</span> abre as portas para <span className="text-gold-500">60 atletas</span>.
             </h1>
           </div>
           
