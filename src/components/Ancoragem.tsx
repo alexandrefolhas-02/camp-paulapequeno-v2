@@ -1,4 +1,4 @@
-import { motion } from 'motion/react'
+import { m } from 'motion/react'
 import { Star, Target, Gift, Utensils, Heart, Award, Users, Camera, Trophy, Network, Lock } from 'lucide-react'
 import { trackEvent } from '@/lib/utils'
 import { CONFIG } from '@/lib/config'
@@ -80,7 +80,7 @@ export default function Ancoragem() {
         </div>
 
         {/* TABELA DE VALORES */}
-        <motion.div 
+        <m.div 
           className="mt-12 bg-black-main rounded-2xl border border-gold-500/20 overflow-hidden max-w-3xl mx-auto w-full shadow-2xl"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -120,10 +120,10 @@ export default function Ancoragem() {
               </div>
             </div>
           </div>
-        </motion.div>
+        </m.div>
 
         {/* DESTAQUE DO PREÇO REAL */}
-        <motion.div 
+        <m.div 
           className="mt-12 text-center"
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -162,7 +162,7 @@ export default function Ancoragem() {
             </div>
           </div>
 
-        </motion.div>
+        </m.div>
 
       </div>
     </section>

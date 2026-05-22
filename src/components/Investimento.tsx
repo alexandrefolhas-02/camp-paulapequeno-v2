@@ -1,4 +1,4 @@
-import { motion } from 'motion/react'
+import { m } from 'motion/react'
 import { Crown, Sparkles, CheckCircle2, CreditCard, Smartphone, FileText, Lock, ShieldCheck, Clock } from 'lucide-react'
 import { trackEvent } from '@/lib/utils'
 import { CONFIG } from '@/lib/config'
@@ -55,7 +55,7 @@ export default function Investimento() {
         </div>
 
         {/* CARD PRINCIPAL — ATLETA FUNDADOR */}
-        <motion.div 
+        <m.div 
           className="mt-12 max-w-4xl mx-auto w-full bg-gradient-to-br from-gold-500/10 via-black-secondary to-black-main border-2 border-gold-500 rounded-3xl p-8 md:p-12 shadow-2xl shadow-gold-500/10 relative overflow-hidden"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -133,10 +133,10 @@ export default function Investimento() {
             </div>
 
           </div>
-        </motion.div>
+        </m.div>
 
         {/* CARD SECUNDÁRIO — LOTE OFICIAL */}
-        <motion.div 
+        <m.div 
           className="mt-12 max-w-3xl mx-auto w-full bg-black-secondary border border-gold-500/20 rounded-2xl p-6 md:p-8 opacity-90"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -177,7 +177,7 @@ export default function Investimento() {
               <span>Garantir vaga regular</span>
             </button>
           </div>
-        </motion.div>
+        </m.div>
 
         {/* LINHA DISCRETA — ALUNOS ESCOLA */}
         <div className="mt-12 max-w-2xl mx-auto w-full text-center">

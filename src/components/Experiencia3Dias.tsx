@@ -1,4 +1,4 @@
-import { motion } from 'motion/react'
+import { m } from 'motion/react'
 
 export default function Experiencia3Dias() {
   const dias = [
@@ -66,7 +66,7 @@ export default function Experiencia3Dias() {
 
         <div className="mt-16 grid grid-cols-1 lg:grid-cols-3 gap-6">
           {dias.map((dia, index) => (
-            <motion.div
+            <m.div
               key={index}
               className="bg-black-secondary rounded-xl p-6 md:p-8 border-t-4 border-gold-500 hover:transform hover:scale-[1.02] transition-transform duration-300 shadow-xl flex flex-col"
               initial={{ opacity: 0, y: 30 }}
@@ -103,7 +103,7 @@ export default function Experiencia3Dias() {
                   ))}
                 </ul>
               </div>
-            </motion.div>
+            </m.div>
           ))}
         </div>
       </div>

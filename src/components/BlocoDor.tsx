@@ -1,4 +1,4 @@
-import { motion } from 'motion/react'
+import { m } from 'motion/react'
 
 export default function BlocoDor() {
   const dores = [
@@ -13,7 +13,7 @@ export default function BlocoDor() {
       <div className="max-w-4xl mx-auto">
         
         {/* Título */}
-        <motion.h2 
+        <m.h2 
           className="text-center font-display font-bold text-4xl md:text-6xl text-white leading-tight"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -22,9 +22,9 @@ export default function BlocoDor() {
         >
           Se você está aqui,<br />
           é porque sabe.
-        </motion.h2>
+        </m.h2>
 
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -39,12 +39,12 @@ export default function BlocoDor() {
           <p className="mt-10 text-gold-500 font-semibold italic text-center text-xl">
             Mas sabe também o que falta:
           </p>
-        </motion.div>
+        </m.div>
 
         {/* Lista de Dores */}
         <div className="mt-12 flex flex-col gap-6 max-w-2xl mx-auto">
           {dores.map((dor, index) => (
-            <motion.div 
+            <m.div 
               key={index}
               className="flex items-start gap-4"
               initial={{ opacity: 0, x: -30 }}
@@ -58,12 +58,12 @@ export default function BlocoDor() {
               <p className="text-white text-lg md:text-xl font-medium">
                 {dor}
               </p>
-            </motion.div>
+            </m.div>
           ))}
         </div>
 
         {/* Conclusão */}
-        <motion.div 
+        <m.div 
           className="mt-16 p-8 border border-gold-500/30 bg-black-main/50 rounded-2xl shadow-xl backdrop-blur-sm"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -75,7 +75,7 @@ export default function BlocoDor() {
             E frustração afasta atletas do esporte<br />
             no momento exato em que elas deveriam estar voando.
           </p>
-        </motion.div>
+        </m.div>
 
       </div>
     </section>

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { motion, AnimatePresence } from 'motion/react'
+import { m, AnimatePresence } from 'motion/react'
 import { Plus, Minus, MessageCircle } from 'lucide-react'
 import { trackEvent } from '@/lib/utils'
 import { VAGAS_CONFIG } from '@/data/vagas'
@@ -97,7 +97,7 @@ export default function FAQ() {
                 
                 <AnimatePresence>
                   {isOpen && (
-                    <motion.div
+                    <m.div
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: 'auto', opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
@@ -106,7 +106,7 @@ export default function FAQ() {
                       <div className="px-5 md:px-6 pb-5 md:pb-6 text-sm md:text-base text-gray-300 leading-relaxed border-t border-gold-500/10">
                         {item.a}
                       </div>
-                    </motion.div>
+                    </m.div>
                   )}
                 </AnimatePresence>
               </div>

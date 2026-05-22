@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { motion } from 'motion/react'
+import { m } from 'motion/react'
 import { trackEvent } from '@/lib/utils'
 import { CONFIG } from '@/lib/config'
 
@@ -27,7 +27,7 @@ export default function BlocoRevelacao() {
       <div className="max-w-5xl mx-auto text-center relative z-10">
         
         {/* Título */}
-        <motion.h2 
+        <m.h2 
           className="font-display font-black text-4xl md:text-7xl leading-tight text-white"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -37,9 +37,9 @@ export default function BlocoRevelacao() {
           E se ela pudesse passar 3 dias<br />
           dentro da escola que formou<br />
           <span className="text-gold-500">Paula Pequeno?</span>
-        </motion.h2>
+        </m.h2>
 
-        <motion.div
+        <m.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -52,7 +52,7 @@ export default function BlocoRevelacao() {
           <p className="text-2xl text-gray-300 font-semibold tracking-wide">
             Como atleta.
           </p>
-        </motion.div>
+        </m.div>
 
         {/* Lista Emocional */}
         <div className="mt-10 flex flex-col gap-3">
@@ -62,7 +62,7 @@ export default function BlocoRevelacao() {
             const parts = linha.split('Paula')
             
             return (
-              <motion.p 
+              <m.p 
                 key={index}
                 className={`text-xl md:text-2xl text-white ${isLast ? 'font-bold mt-2' : ''}`}
                 initial={{ opacity: 0, y: 20 }}
@@ -77,13 +77,13 @@ export default function BlocoRevelacao() {
                 ) : (
                   linha
                 )}
-              </motion.p>
+              </m.p>
             )
           })}
         </div>
 
         {/* Bloco de Fechamento */}
-        <motion.div 
+        <m.div 
           className="mt-16 py-8 border-t border-b border-gold-500/20"
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -94,10 +94,10 @@ export default function BlocoRevelacao() {
             <span className="text-white">Isso é o Elite Camp.</span><br />
             <span className="text-gold-500">E nunca aconteceu antes.</span>
           </h3>
-        </motion.div>
+        </m.div>
 
         {/* Vídeo */}
-        <motion.div 
+        <m.div 
           className="mt-12 aspect-video max-w-3xl mx-auto rounded-xl overflow-hidden border border-gold-500/30 shadow-2xl relative bg-black-secondary group cursor-pointer"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -120,13 +120,13 @@ export default function BlocoRevelacao() {
           ) : (
             <div className="w-full h-full flex items-center justify-center bg-black-main">
               <p className="text-gray-400 italic">Iframe do YouTube/Vimeo entrará aqui</p>
-              {/* <iframe src="..." loading="lazy" /> */}
+              {/* <iframe src="..." loading="lazy" decoding="async" /> */}
             </div>
           )}
-        </motion.div>
+        </m.div>
 
         {/* CTA */}
-        <motion.div
+        <m.div
           className="mt-10"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -141,7 +141,7 @@ export default function BlocoRevelacao() {
           >
             QUERO GARANTIR ESSA VAGA →
           </button>
-        </motion.div>
+        </m.div>
 
       </div>
     </section>

@@ -1,4 +1,4 @@
-import { motion } from 'motion/react'
+import { m } from 'motion/react'
 
 export default function PorQueAPaula() {
   const credenciais = [
@@ -14,7 +14,7 @@ export default function PorQueAPaula() {
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-16">
         
         {/* COLUNA ESQUERDA (Foto) */}
-        <motion.div 
+        <m.div 
           className="flex-1 w-full max-w-md lg:max-w-none"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -27,15 +27,15 @@ export default function PorQueAPaula() {
               alt="Paula Pequeno sorrindo durante competição"
               width={1000}
               height={1250}
-              loading="lazy"
+              loading="lazy" decoding="async"
               className="w-full h-auto rounded-xl shadow-2xl object-cover aspect-[4/5]"
             />
           </div>
-        </motion.div>
+        </m.div>
 
         {/* COLUNA DIREITA (Conteúdo) */}
         <div className="flex-1 w-full">
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -49,12 +49,12 @@ export default function PorQueAPaula() {
               A única atleta que pode<br />
               oferecer essa imersão.
             </h2>
-          </motion.div>
+          </m.div>
 
           {/* Credenciais */}
           <div className="mt-10 flex flex-col gap-4">
             {credenciais.map((cred, index) => (
-              <motion.div 
+              <m.div 
                 key={index}
                 className="flex items-center gap-4 p-4 border-l-4 border-gold-500 bg-black-main rounded-r-lg shadow-sm"
                 initial={{ opacity: 0, x: 30 }}
@@ -66,12 +66,12 @@ export default function PorQueAPaula() {
                 <p className="text-white font-medium text-sm md:text-base">
                   {cred.text}
                 </p>
-              </motion.div>
+              </m.div>
             ))}
           </div>
 
           {/* Citação */}
-          <motion.div 
+          <m.div 
             className="mt-12 p-6 border-l-4 border-gold-500/50 bg-black-main/30 rounded-r-lg"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -86,7 +86,7 @@ export default function PorQueAPaula() {
             <p className="mt-4 text-gold-500 font-semibold text-right">
               — Paula Pequeno
             </p>
-          </motion.div>
+          </m.div>
 
         </div>
       </div>

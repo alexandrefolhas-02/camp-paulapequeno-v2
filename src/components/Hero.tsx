@@ -1,4 +1,4 @@
-import { motion } from 'motion/react'
+import { m } from 'motion/react'
 import { trackEvent } from '@/lib/utils'
 import { CONFIG } from '@/lib/config'
 import { VAGAS_CONFIG } from '@/data/vagas'
@@ -25,7 +25,7 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-4 py-12 md:py-20 grid grid-cols-1 md:grid-cols-[58%_42%] gap-12 md:gap-8 items-center relative z-10 w-full">
         
         {/* COLUNA ESQUERDA (texto) */}
-        <motion.div 
+        <m.div 
           className="space-y-8"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -78,10 +78,10 @@ export default function Hero() {
           <div className="pt-4 text-sm text-gray-300 flex items-center gap-2 opacity-80">
             <MapPin className="w-4 h-4 text-gold-500" strokeWidth={2} /> Clube de Aeronáutica — Barra da Tijuca, Rio de Janeiro
           </div>
-        </motion.div>
+        </m.div>
 
         {/* COLUNA DIREITA (imagem) */}
-        <motion.div 
+        <m.div 
           className="relative w-full h-[500px] md:h-[700px]"
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -99,6 +99,7 @@ export default function Hero() {
               height={800}
               loading="eager"
               fetchPriority="high"
+              decoding="async"
               className="w-full h-full object-cover object-top aspect-[3/4]"
             />
           </div>
@@ -107,7 +108,7 @@ export default function Hero() {
             <h3 className="text-white font-display font-bold text-xl uppercase tracking-wider mb-1">Paula Pequeno</h3>
             <p className="text-gold-500 font-medium text-sm">Bicampeã Olímpica • MVP Beijing 2008</p>
           </div>
-        </motion.div>
+        </m.div>
       </div>
     </section>
   )

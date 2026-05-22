@@ -1,4 +1,4 @@
-import { motion } from 'motion/react'
+import { m } from 'motion/react'
 import { Sparkles, ArrowRight } from 'lucide-react'
 import { trackEvent } from '@/lib/utils'
 import { CONFIG } from '@/lib/config'
@@ -24,7 +24,7 @@ export default function UltimaChamada() {
         <div className="flex flex-col md:flex-row gap-12 lg:gap-16 items-center">
           
           {/* COLUNA ESQUERDA — IMAGEM */}
-          <motion.div 
+          <m.div 
             className="w-full md:w-1/2 flex-shrink-0"
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -37,7 +37,7 @@ export default function UltimaChamada() {
                 alt="Paula Pequeno com jovem atleta após entrega de certificado"
                 width={1200}
                 height={1500}
-                loading="lazy"
+                loading="lazy" decoding="async"
                 className="w-full h-full object-cover"
                 onError={(e) => {
                   e.currentTarget.style.display = 'none';
@@ -52,10 +52,10 @@ export default function UltimaChamada() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </m.div>
 
           {/* COLUNA DIREITA — TEXTO */}
-          <motion.div 
+          <m.div 
             className="w-full md:w-1/2 flex flex-col justify-center min-w-0"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -122,7 +122,7 @@ export default function UltimaChamada() {
               </button>
             </div>
             
-          </motion.div>
+          </m.div>
 
         </div>
       </div>

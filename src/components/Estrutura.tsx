@@ -1,4 +1,4 @@
-import { motion } from 'motion/react'
+import { m } from 'motion/react'
 import { MapPin } from 'lucide-react'
 
 export default function Estrutura() {
@@ -7,7 +7,7 @@ export default function Estrutura() {
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 items-center">
         
         {/* COLUNA ESQUERDA - Texto */}
-        <motion.div 
+        <m.div 
           className="flex-1 w-full"
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -50,10 +50,10 @@ export default function Estrutura() {
             <div className="text-xs text-gold-500 tracking-wider">SEDE OFICIAL</div>
             <div className="text-white font-semibold tracking-wide text-lg mt-1">CLUBE DE AERONÁUTICA</div>
           </div>
-        </motion.div>
+        </m.div>
 
         {/* COLUNA DIREITA - Galeria */}
-        <motion.div 
+        <m.div 
           className="flex-1 w-full"
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -67,7 +67,7 @@ export default function Estrutura() {
               <img 
                 src="/images/structure-aerial.webp" 
                 alt="Vista aérea do Clube de Aeronáutica" 
-                loading="lazy"
+                loading="lazy" decoding="async"
                 width={800}
                 height={450}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -83,7 +83,7 @@ export default function Estrutura() {
               <img 
                 src="/images/structure-gym.webp" 
                 alt="Ginásio do Clube de Aeronáutica" 
-                loading="lazy"
+                loading="lazy" decoding="async"
                 width={400}
                 height={400}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -99,7 +99,7 @@ export default function Estrutura() {
               <img 
                 src="/images/structure-academy.webp" 
                 alt="Academia do Clube de Aeronáutica" 
-                loading="lazy"
+                loading="lazy" decoding="async"
                 width={400}
                 height={400}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -115,7 +115,7 @@ export default function Estrutura() {
               <img 
                 src="/images/structure-restaurant.webp" 
                 alt="Restaurante do Clube de Aeronáutica" 
-                loading="lazy"
+                loading="lazy" decoding="async"
                 width={800}
                 height={340}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -127,7 +127,7 @@ export default function Estrutura() {
             </div>
 
           </div>
-        </motion.div>
+        </m.div>
         
       </div>
     </section>

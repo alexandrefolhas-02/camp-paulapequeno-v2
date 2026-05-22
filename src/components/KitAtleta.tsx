@@ -1,4 +1,4 @@
-import { motion } from 'motion/react'
+import { m } from 'motion/react'
 import { Crown, Trophy, Gift, Sparkles, BookOpen, Award } from 'lucide-react'
 import { trackEvent } from '@/lib/utils'
 import { CONFIG } from '@/lib/config'
@@ -77,7 +77,7 @@ export default function KitAtleta() {
         <div className="mt-16 flex flex-col lg:flex-row gap-12 items-center">
           
           {/* COLUNA ESQUERDA */}
-          <motion.div 
+          <m.div 
             className="flex-1 w-full"
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -90,7 +90,7 @@ export default function KitAtleta() {
                 alt="Kit Atleta Volleyball Elite Camp — camisa, garrafa, passaporte e certificado"
                 width={1200}
                 height={1200}
-                loading="lazy"
+                loading="lazy" decoding="async"
                 className="w-full h-full object-cover"
                 onError={(e) => {
                   e.currentTarget.style.display = 'none';
@@ -103,10 +103,10 @@ export default function KitAtleta() {
                 * Imagem ilustrativa. Design final em produção — divulgação até junho/2026.
               </p>
             </div>
-          </motion.div>
+          </m.div>
 
           {/* COLUNA DIREITA */}
-          <motion.div 
+          <m.div 
             className="flex-1 w-full"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -130,7 +130,7 @@ export default function KitAtleta() {
                 </div>
               ))}
             </div>
-          </motion.div>
+          </m.div>
 
         </div>
 
@@ -138,7 +138,7 @@ export default function KitAtleta() {
         <div className="mt-16 w-full border-t border-gold-500/20 max-w-2xl mx-auto" />
 
         {/* BLOCO ESPECIAL — KIT FUNDADOR */}
-        <motion.div 
+        <m.div 
           className="mt-16 max-w-4xl mx-auto w-full bg-gradient-to-br from-gold-500/5 to-transparent border-2 border-gold-500/40 rounded-2xl p-8 md:p-12 shadow-xl"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -185,13 +185,13 @@ export default function KitAtleta() {
               Garantir Kit Fundador →
             </button>
           </div>
-        </motion.div>
+        </m.div>
 
         {/* DIVISOR DOURADO */}
         <div className="mt-16 w-full border-t border-gold-500/20 max-w-2xl mx-auto" />
 
         {/* BLOCO BÔNUS — SORTEIO */}
-        <motion.div 
+        <m.div 
           className="mt-16 max-w-5xl mx-auto w-full bg-black-secondary border border-gold-600/30 rounded-2xl overflow-hidden shadow-2xl grid grid-cols-1 md:grid-cols-2"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -205,7 +205,7 @@ export default function KitAtleta() {
               alt="Kit Sorteio Paula Pequeno — camisa autografada e bola oficial"
               width={1024}
               height={1024}
-              loading="lazy"
+              loading="lazy" decoding="async"
               className="w-full h-full object-cover"
               onError={(e) => {
                 e.currentTarget.style.display = 'none';
@@ -242,7 +242,7 @@ export default function KitAtleta() {
               * Sorteio ao vivo durante o encerramento do Camp — dia 26/07/2026
             </p>
           </div>
-        </motion.div>
+        </m.div>
 
       </div>
     </section>

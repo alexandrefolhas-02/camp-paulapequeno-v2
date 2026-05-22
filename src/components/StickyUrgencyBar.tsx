@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { motion, AnimatePresence } from 'motion/react'
+import { m, AnimatePresence } from 'motion/react'
 import { AlertTriangle } from 'lucide-react'
 import { trackEvent } from '@/lib/utils'
 import { CONFIG } from '@/lib/config'
@@ -47,7 +47,7 @@ export default function StickyUrgencyBar() {
   return (
     <AnimatePresence>
       {isVisible && (
-        <motion.div
+        <m.div
           initial={{ y: -100 }}
           animate={{ y: 0 }}
           exit={{ y: -100 }}
@@ -82,7 +82,7 @@ export default function StickyUrgencyBar() {
             </button>
             
           </div>
-        </motion.div>
+        </m.div>
       )}
     </AnimatePresence>
   )

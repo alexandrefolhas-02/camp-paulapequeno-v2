@@ -1,47 +1,57 @@
+import { lazy, Suspense } from 'react'
+import { LazyMotion, domAnimation } from 'motion/react'
+
+// Eager (acima da dobra)
 import StickyUrgencyBar from '@/components/StickyUrgencyBar'
 import Hero from '@/components/Hero'
-import BlocoDor from '@/components/BlocoDor'
-import BlocoRevelacao from '@/components/BlocoRevelacao'
-import PorQueAPaula from '@/components/PorQueAPaula'
-import ParaQuemE from '@/components/ParaQuemE'
-import Transformacao from '@/components/Transformacao'
-import Experiencia3Dias from '@/components/Experiencia3Dias'
-import Estrutura from '@/components/Estrutura'
-import KitAtleta from '@/components/KitAtleta'
-import Ancoragem from '@/components/Ancoragem'
-import Investimento from '@/components/Investimento'
-import FAQ from '@/components/FAQ'
-import UltimaChamada from '@/components/UltimaChamada'
-import Footer from '@/components/Footer'
 import Divider from '@/components/Divider'
+
+// Lazy (abaixo da dobra)
+const BlocoDor = lazy(() => import('@/components/BlocoDor'))
+const BlocoRevelacao = lazy(() => import('@/components/BlocoRevelacao'))
+const PorQueAPaula = lazy(() => import('@/components/PorQueAPaula'))
+const ParaQuemE = lazy(() => import('@/components/ParaQuemE'))
+const Transformacao = lazy(() => import('@/components/Transformacao'))
+const Experiencia3Dias = lazy(() => import('@/components/Experiencia3Dias'))
+const Estrutura = lazy(() => import('@/components/Estrutura'))
+const KitAtleta = lazy(() => import('@/components/KitAtleta'))
+const Ancoragem = lazy(() => import('@/components/Ancoragem'))
+const Investimento = lazy(() => import('@/components/Investimento'))
+const FAQ = lazy(() => import('@/components/FAQ'))
+const UltimaChamada = lazy(() => import('@/components/UltimaChamada'))
+const Footer = lazy(() => import('@/components/Footer'))
 
 function App() {
   return (
-    <>
+    <LazyMotion features={domAnimation} strict>
       <StickyUrgencyBar />
       <main>
         <Hero />
-        <Divider />
-        <BlocoDor />
-        <BlocoRevelacao />
-        <Divider />
-        <PorQueAPaula />
-        <ParaQuemE />
-        <Transformacao />
-        <Divider />
-        <Experiencia3Dias />
-        <Estrutura />
-        <Divider />
-        <KitAtleta />
-        <Ancoragem />
-        <Divider />
-        <Investimento />
-        <FAQ />
-        <Divider />
-        <UltimaChamada />
+        <Suspense fallback={<div className="h-20" />}>
+          <Divider />
+          <BlocoDor />
+          <BlocoRevelacao />
+          <Divider />
+          <PorQueAPaula />
+          <ParaQuemE />
+          <Transformacao />
+          <Divider />
+          <Experiencia3Dias />
+          <Estrutura />
+          <Divider />
+          <KitAtleta />
+          <Ancoragem />
+          <Divider />
+          <Investimento />
+          <FAQ />
+          <Divider />
+          <UltimaChamada />
+        </Suspense>
       </main>
-      <Footer />
-    </>
+      <Suspense fallback={null}>
+        <Footer />
+      </Suspense>
+    </LazyMotion>
   )
 }
 

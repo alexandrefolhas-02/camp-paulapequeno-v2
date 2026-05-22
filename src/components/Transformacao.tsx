@@ -1,4 +1,4 @@
-import { motion } from 'motion/react'
+import { m } from 'motion/react'
 import { Target, Brain, Users, BookOpen } from 'lucide-react'
 
 export default function Transformacao() {
@@ -46,7 +46,7 @@ export default function Transformacao() {
 
         <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {cards.map((card, index) => (
-            <motion.div
+            <m.div
               key={index}
               className="p-6 md:p-8 bg-black-main border border-gold-600/30 rounded-xl hover:border-gold-500 transition-colors duration-300 flex flex-col items-center text-center group"
               initial={{ opacity: 0, y: 30 }}
@@ -63,7 +63,7 @@ export default function Transformacao() {
               <p className="text-sm text-gray-300 leading-relaxed">
                 {card.desc}
               </p>
-            </motion.div>
+            </m.div>
           ))}
         </div>
       </div>

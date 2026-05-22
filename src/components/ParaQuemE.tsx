@@ -1,4 +1,4 @@
-import { motion } from 'motion/react'
+import { m } from 'motion/react'
 
 export default function ParaQuemE() {
   const paraVoce = [
@@ -33,7 +33,7 @@ export default function ParaQuemE() {
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
           
           {/* É PARA VOCÊ */}
-          <motion.div 
+          <m.div 
             className="p-8 border-l-4 border-green-500 bg-black-secondary rounded-r-xl"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -53,10 +53,10 @@ export default function ParaQuemE() {
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </m.div>
 
           {/* NÃO É PARA VOCÊ */}
-          <motion.div 
+          <m.div 
             className="p-8 border-l-4 border-red-500 bg-black-secondary rounded-r-xl opacity-90"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -76,7 +76,7 @@ export default function ParaQuemE() {
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </m.div>
 
         </div>
       </div>
