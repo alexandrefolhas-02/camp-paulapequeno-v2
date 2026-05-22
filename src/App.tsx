@@ -9,6 +9,8 @@ import Experiencia3Dias from '@/components/Experiencia3Dias'
 import Estrutura from '@/components/Estrutura'
 import KitAtleta from '@/components/KitAtleta'
 import Ancoragem from '@/components/Ancoragem'
+import Investimento from '@/components/Investimento'
+import FAQ from '@/components/FAQ'
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
         <Estrutura />
         <KitAtleta />
         <Ancoragem />
+        <Investimento />
+        <FAQ />
       </main>
     </>
   )
