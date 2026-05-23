@@ -22,14 +22,14 @@ export default function Investimento() {
 
   const inclusos = [
     "Acesso completo aos 3 dias do Camp com Paula Pequeno",
-    "Kit Atleta Fundador numerado (01/30 a 30/30)",
+    "Kit Atleta Fundador(a) numerado (01/30 a 30/30)",
     "Foto oficial impressa autografada pela Paula",
     "Pin colecionável de 1ª Edição",
     "Todas as refeições + coffee breaks gourmet",
     "Avaliação técnica individual com a Paula",
     "Workshop para pais incluso",
     "Participação no Torneio Elite Camp",
-    "Acesso ao grupo exclusivo de Fundadores no WhatsApp",
+    "Acesso ao grupo exclusivo de Fundadores(as) no WhatsApp",
     "Certificado + Passaporte do Atleta"
   ]
 
@@ -69,11 +69,11 @@ export default function Investimento() {
             
             <div className="inline-flex items-center gap-2 bg-gold-500 text-black px-5 py-2 rounded-full font-bold text-xs uppercase tracking-wide">
               <Crown className="w-4 h-4 flex-shrink-0" strokeWidth={2.5} />
-              <span>EXCLUSIVO ATLETA FUNDADOR</span>
+              <span>EXCLUSIVO ATLETA FUNDADOR(A)</span>
             </div>
 
             <h3 className="mt-6 font-display text-3xl md:text-5xl font-bold text-white">
-              Atleta Fundador
+              Atleta Fundador(a)
             </h3>
             
             <p className="mt-2 text-lg text-gold-400 font-medium">
@@ -114,7 +114,7 @@ export default function Investimento() {
                 data-event-source="investimento_fundador"
                 className="w-full flex items-center justify-center gap-2 bg-gold-500 hover:bg-gold-600 text-black font-bold text-base md:text-lg px-8 py-5 rounded-xl shadow-2xl shadow-gold-500/30 hover:scale-[1.02] transition-transform duration-300"
               >
-                <span>GARANTIR MINHA VAGA DE FUNDADORA</span>
+                <span>GARANTIR MINHA VAGA DE FUNDADOR(A)</span>
                 <Sparkles className="w-5 h-5 flex-shrink-0" strokeWidth={2} />
               </button>
 
@@ -164,7 +164,7 @@ export default function Investimento() {
           </div>
 
           <p className="mt-6 text-sm text-gray-300 leading-relaxed min-w-0 flex-wrap">
-            Após as {VAGAS_CONFIG.fundador.total} vagas de Atleta Fundador serem preenchidas, o investimento passa a ser de R$ 2.434, com todos os benefícios do Camp — exceto os exclusivos da 1ª edição (numeração serial, foto autografada, pin colecionável, grupo de fundadores).
+            Após as {VAGAS_CONFIG.fundador.total} vagas de Atleta Fundador(a) serem preenchidas, o investimento passa a ser de R$ 2.434, com todos os benefícios do Camp — exceto os exclusivos da 1ª edição (numeração serial, foto autografada, pin colecionável, grupo de fundadores(as)).
           </p>
 
           <div className="mt-6 flex justify-start sm:justify-end min-w-0 w-full">

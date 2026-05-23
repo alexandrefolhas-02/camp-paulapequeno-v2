@@ -47,8 +47,8 @@ export default function FAQ() {
       a: "Sim! Para 2 ou mais atletas da mesma família (irmãos) ou do mesmo time, oferecemos condições especiais. Entre em contato com nossa equipe pelo WhatsApp para receber a proposta personalizada."
     },
     {
-      q: "O que significa ser 'Atleta Fundador'?",
-      a: `Esta é a 1ª edição oficial do Paula Pequeno Elite Camp. Atletas Fundadores entram para a história como pioneiros — kit numerado de 01/${VAGAS_CONFIG.fundador.total} a ${VAGAS_CONFIG.fundador.total}/${VAGAS_CONFIG.fundador.total}, foto oficial impressa autografada pela Paula, pin colecionável e acesso ao grupo exclusivo de Fundadores. Próximas edições terão valor maior e não terão os exclusivos da 1ª edição.`
+      q: "O que significa ser 'Atleta Fundador(a)'?",
+      a: `Esta é a 1ª edição oficial do Paula Pequeno Elite Camp. Atletas Fundadores(as) entram para a história como pioneiros(as) — kit numerado de 01/${VAGAS_CONFIG.fundador.total} a ${VAGAS_CONFIG.fundador.total}/${VAGAS_CONFIG.fundador.total}, foto oficial impressa autografada pela Paula, pin colecionável e acesso ao grupo exclusivo de Fundadores(as). Próximas edições terão valor maior e não terão os exclusivos da 1ª edição.`
     }
   ]
 

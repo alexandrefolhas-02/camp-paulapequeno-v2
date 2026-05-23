@@ -131,7 +131,7 @@ export default function Ancoragem() {
           transition={{ duration: 0.8, delay: 0.3 }}
         >
           <p className="text-base text-gray-300 mt-8 font-medium">
-            Mas seu investimento como Atleta Fundador é...
+            Mas seu investimento como Atleta Fundador(a) é...
           </p>
           
           <div className="mt-4 font-display text-6xl md:text-8xl font-bold text-gold-500 leading-none">
@@ -153,7 +153,7 @@ export default function Ancoragem() {
               data-event-source="ancoragem_cta"
               className="bg-gold-500 text-black px-8 py-4 rounded-lg font-bold text-lg hover:scale-105 transition-transform duration-300 shadow-2xl w-full sm:w-auto uppercase max-w-full"
             >
-              QUERO SER ATLETA FUNDADORA →
+              QUERO SER ATLETA FUNDADOR(A) →
             </button>
             
             <div className="mt-3 flex items-center justify-center gap-1.5 text-xs text-gray-300 font-medium">

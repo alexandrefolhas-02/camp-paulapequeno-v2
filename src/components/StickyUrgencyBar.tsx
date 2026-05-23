@@ -40,7 +40,7 @@ export default function StickyUrgencyBar() {
 
   const handleCTA = () => {
     trackEvent('Lead', { source: 'sticky_bar' })
-    const link = CONFIG.whatsapp.getLink('Quero ser Atleta Fundador!')
+    const link = CONFIG.whatsapp.getLink('Quero ser Atleta Fundador(a)!')
     window.open(link, '_blank')
   }
 
@@ -60,7 +60,7 @@ export default function StickyUrgencyBar() {
             <div className="flex items-center gap-2 font-semibold text-sm md:text-base min-w-0">
               <AlertTriangle className="w-4 h-4 text-black" strokeWidth={2.5} />
               <span className="truncate">
-                ATLETA FUNDADOR: restam <span className="font-bold underline">{VAGAS_CONFIG.fundador.disponiveis}</span> de {VAGAS_CONFIG.fundador.total} vagas
+                ATLETA FUNDADOR(A): restam <span className="font-bold underline">{VAGAS_CONFIG.fundador.disponiveis}</span> de {VAGAS_CONFIG.fundador.total} vagas
               </span>
             </div>
             

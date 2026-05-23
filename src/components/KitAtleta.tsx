@@ -7,7 +7,7 @@ import { VAGAS_CONFIG } from '@/data/vagas'
 export default function KitAtleta() {
   const handleFundadorCTA = () => {
     trackEvent('Lead', { source: 'kit_fundador_card' })
-    const link = CONFIG.whatsapp.getLink('Quero garantir minha vaga de Atleta Fundador!')
+    const link = CONFIG.whatsapp.getLink('Quero garantir minha vaga de Atleta Fundador(a)!')
     window.open(link, '_blank')
   }
 
@@ -42,8 +42,8 @@ export default function KitAtleta() {
   const exclusivoFundador = [
     "Numeração serial gravada (01/30 a 30/30)",
     "Foto oficial impressa autografada pela Paula",
-    "Pin colecionável Fundador 1ª Edição",
-    "Acesso a grupo exclusivo de Fundadores no WhatsApp"
+    "Pin colecionável Fundador(a) 1ª Edição",
+    "Acesso a grupo exclusivo de Fundadores(as) no WhatsApp"
   ]
 
   const bonusSorteio = [
@@ -147,11 +147,11 @@ export default function KitAtleta() {
         >
           <div className="inline-flex items-center gap-2 bg-gold-500 text-black px-4 py-1.5 rounded-full font-bold text-xs uppercase tracking-wide">
             <Crown className="w-4 h-4" strokeWidth={2.5} />
-            EXCLUSIVO ATLETA FUNDADOR
+            EXCLUSIVO ATLETA FUNDADOR(A)
           </div>
           
           <h3 className="mt-4 font-display text-2xl md:text-4xl font-bold text-white">
-            Kit Fundador Numerado
+            Kit Fundador(a) Numerado
           </h3>
           
           <p className="mt-2 text-lg text-gold-400 font-medium">
@@ -159,7 +159,7 @@ export default function KitAtleta() {
           </p>
           
           <p className="mt-6 text-base text-gray-300 leading-relaxed">
-            Os primeiros 30 inscritos entram para a história como Atletas Fundadores da 1ª edição do Paula Pequeno Elite Camp. Cada um recebe um kit com numeração serial única — de 01/30 a 30/30 — gravada na camisa e no passaporte.
+            Os primeiros 30 inscritos entram para a história como Atletas Fundadores(as) da 1ª edição do Paula Pequeno Elite Camp. Cada um recebe um kit com numeração serial única — de 01/30 a 30/30 — gravada na camisa e no passaporte.
           </p>
 
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -182,7 +182,7 @@ export default function KitAtleta() {
               data-event-source="kit_fundador_card"
               className="w-full sm:w-auto bg-gold-500 text-black px-5 py-2.5 rounded-lg font-semibold hover:scale-105 transition-transform uppercase shadow-lg text-sm md:text-base"
             >
-              Garantir Kit Fundador →
+              Garantir Kit Fundador(a) →
             </button>
           </div>
         </m.div>

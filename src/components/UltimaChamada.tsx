@@ -91,7 +91,7 @@ export default function UltimaChamada() {
               <Sparkles className="w-8 h-8 text-gold-500 flex-shrink-0" strokeWidth={1.5} />
               <div className="min-w-0 text-center sm:text-left flex-1">
                 <div className="text-sm text-gold-400 font-semibold uppercase tracking-wide">
-                  ATLETA FUNDADOR
+                  ATLETA FUNDADOR(A)
                 </div>
                 <div className="mt-1 text-lg md:text-xl text-white font-bold min-w-0 flex-wrap">
                   {VAGAS_CONFIG.fundador.disponiveis} de {VAGAS_CONFIG.fundador.total} vagas ainda esperando.
