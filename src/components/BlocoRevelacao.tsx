@@ -34,7 +34,7 @@ export default function BlocoRevelacao() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          E se ela pudesse passar 3 dias<br />
+          E se ele(a) pudesse passar 3 dias<br />
           treinando e aprendendo com a<br />
           <span className="text-gold-500">Paula Pequeno?</span>
         </m.h2>
