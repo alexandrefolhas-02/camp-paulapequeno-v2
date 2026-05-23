@@ -2,11 +2,11 @@ import { m } from 'motion/react'
 
 export default function ParaQuemE() {
   const paraVoce = [
-    "Ela tem entre 11 e 17 anos",
-    "Já joga vôlei (federada ou em escolinha de alto nível)",
-    "Você acredita que talento precisa de direção certa",
-    "Você quer dar a ela uma experiência que vai além do treino",
-    "Você sabe que oportunidades raras transformam carreiras"
+    "Ele(a) tem entre 11 e 17 anos",
+    "Já joga vôlei em qualquer nível e categoria",
+    "Você acredita que o talento precisa de direção certa",
+    "Você quer dar a ele(a) uma experiência que vai além dos treinos",
+    "Você sabe que essa oportunidade é única e pode transformar o futuro"
   ]
 
   const naoParaVoce = [

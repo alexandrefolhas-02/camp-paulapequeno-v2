@@ -4,7 +4,7 @@ export default function PorQueAPaula() {
   const credenciais = [
     { icon: "🥇", text: "2 Medalhas Olímpicas — Pequim 2008, Londres 2012" },
     { icon: "🏆", text: "MVP Beijing 2008 — única na história do voleibol brasileiro feminino" },
-    { icon: "🌍", text: "15 anos como atleta profissional — clubes da Europa e América" },
+    { icon: "🌍", text: "+20 anos como atleta profissional — 2X Melhor do Mundo" },
     { icon: "🎓", text: "Fundadora da Escola Paula Pequeno — formando jovens atletas" },
     { icon: "📺", text: "Comentarista esportiva — SporTV / Globo" },
   ]
@@ -79,9 +79,9 @@ export default function PorQueAPaula() {
             transition={{ duration: 0.8, delay: 1 }}
           >
             <p className="italic text-lg text-gray-300 leading-relaxed">
-              "Eu vivi tudo o que essas atletas estão vivendo. A pressão, o platô, 
-              a dúvida. Por isso esse Camp existe — para entregar a elas o que 
-              faltou pra mim quando eu tinha 12 anos."
+              "Eu vivi tudo o que essas atletas estão vivendo. A pressão, as 
+              dúvidas, pensar em desistir. Por isso esse Camp existe, para 
+              entregar a elas o que faltou pra mim quando eu tinha 12 anos."
             </p>
             <p className="mt-4 text-gold-500 font-semibold text-right">
               — Paula Pequeno

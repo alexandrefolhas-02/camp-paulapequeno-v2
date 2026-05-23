@@ -16,7 +16,7 @@ export default function BlocoRevelacao() {
     "Treinando com a Paula.",
     "Almoçando com a Paula.",
     "Sendo ouvida pela Paula.",
-    "Aprendendo, pessoalmente, o que faz uma menina virar campeã olímpica."
+    "Aprendendo, pessoalmente, o que faz um(a) menino(a) virar Bicampeã Olímpica."
   ]
 
   return (
@@ -35,7 +35,7 @@ export default function BlocoRevelacao() {
           transition={{ duration: 0.8 }}
         >
           E se ela pudesse passar 3 dias<br />
-          dentro da escola que formou<br />
+          treinando e aprendendo com a<br />
           <span className="text-gold-500">Paula Pequeno?</span>
         </m.h2>
 
