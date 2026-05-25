@@ -6,7 +6,7 @@ export default function Experiencia3Dias() {
       num: "01",
       data: "SEXTA · 24 JULHO",
       titulo: "Sonho & Pertencimento",
-      desc: "A chegada. O primeiro abraço da Paula. A descoberta de que ela está em um lugar onde finalmente é vista.",
+      desc: "A chegada. O nosso primeiro contato e a descoberta de que você está onde finalmente será visto.",
       cronograma: [
         { hr: "07:30", act: "Credenciamento e Kit" },
         { hr: "08:00", act: "Abertura com Paula Pequeno" },
@@ -23,7 +23,7 @@ export default function Experiencia3Dias() {
       num: "02",
       data: "SÁBADO · 25 JULHO",
       titulo: "Evolução & Mentalidade",
-      desc: "O dia em que tudo se intensifica. Treinos técnico-táticos. Workshop com profissionais da seleção brasileira.",
+      desc: "O dia em que tudo se intensifica. Treinos técnico-táticos e Workshops com grandes profissionais.",
       cronograma: [
         { hr: "08:00", act: "Treino: Levantamento e Ataque" },
         { hr: "09:30", act: "Treino: Bloqueio e Defesa" },
@@ -39,7 +39,7 @@ export default function Experiencia3Dias() {
       num: "03",
       data: "DOMINGO · 26 JULHO",
       titulo: "Glória & Memória",
-      desc: "O Torneio Elite Camp. A mesa redonda com a Paula. A foto que vai pra parede do quarto.",
+      desc: "O Torneio Elite Camp. A mesa redonda com a Paula e a Palestra memorável de uma carreira repleta de duras batalhas.",
       cronograma: [
         { hr: "08:00", act: "Início do Torneio Elite Camp" },
         { hr: "11:00", act: "Mesa Redonda com Paula" },
