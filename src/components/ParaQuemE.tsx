@@ -2,18 +2,18 @@ import { m } from 'motion/react'
 
 export default function ParaQuemE() {
   const paraVoce = [
-    "Ele(a) tem entre 11 e 17 anos",
-    "Já joga vôlei em qualquer nível e categoria",
-    "Você acredita que o talento precisa de direção certa",
-    "Você quer dar a ele(a) uma experiência que vai além dos treinos",
-    "Você sabe que essa oportunidade é única e pode transformar o futuro"
+    "Que tenha entre 11 e 17 anos.",
+    "Já jogue vôlei em qualquer nível e categoria.",
+    "Que acredite que o talento precisa de direção certa.",
+    "Que queira uma experiência que vai além dos treinos.",
+    "Que saiba que essa oportunidade é única e pode transformar o futuro."
   ]
 
   const naoParaVoce = [
-    "Procura recreação esportiva ou colônia de férias",
-    "Quer apenas conhecer a Paula (existem outras formas)",
-    "Sua atleta nunca jogou vôlei antes",
-    "Espera resultados sem dedicação nos 3 dias"
+    "Que queira somente recreação esportiva ou colônia de férias.",
+    "Que espere resultados sem dedicação nos 3 dias.",
+    "Que não esteja de coração aberto ao aprendizado.",
+    "Que não se importe com os valores do esporte."
   ]
 
   return (
@@ -25,8 +25,7 @@ export default function ParaQuemE() {
             PÚBLICO
           </div>
           <h2 className="font-display font-bold text-3xl md:text-5xl text-white mt-4">
-            Este Camp não é<br />
-            para qualquer atleta.
+            QUE TIPO DE ATLETA NÓS ESPERAMOS:
           </h2>
         </div>
 
@@ -40,10 +39,7 @@ export default function ParaQuemE() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="text-green-400 font-semibold text-lg uppercase tracking-wide">
-              ✓ É PARA SUA ATLETA SE...
-            </h3>
-            <ul className="mt-6 space-y-4">
+            <ul className="space-y-4">
               {paraVoce.map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <div className="mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-green-500/20 text-green-500 flex items-center justify-center text-xs font-bold border border-green-500/50">
@@ -63,10 +59,7 @@ export default function ParaQuemE() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h3 className="text-red-400 font-semibold text-lg uppercase tracking-wide">
-              ✗ NÃO É PARA VOCÊ SE...
-            </h3>
-            <ul className="mt-6 space-y-4">
+            <ul className="space-y-4">
               {naoParaVoce.map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <div className="mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-red-500/20 text-red-500 flex items-center justify-center text-xs font-bold border border-red-500/50">

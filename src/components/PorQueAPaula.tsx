@@ -42,7 +42,7 @@ export default function PorQueAPaula() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <div className="inline-block tracking-widest text-gold-500 font-semibold text-sm uppercase mb-4">
-              POR QUE A PAULA
+              POR QUE A PAULA ?
             </div>
             
             <h2 className="font-display font-bold text-3xl md:text-5xl text-white leading-tight">
@@ -80,8 +80,8 @@ export default function PorQueAPaula() {
           >
             <p className="italic text-lg text-gray-300 leading-relaxed">
               "Eu vivi tudo o que essas atletas estão vivendo. A pressão, as 
-              dúvidas, pensar em desistir. Por isso esse Camp existe, para 
-              entregar a elas o que faltou pra mim quando eu tinha 12 anos."
+              dúvidas, as cobranças e até pensar em desistir. Por isso esse Camp existe, para 
+              que atletas entendam a melhor forma de lidar com as dificuldades."
             </p>
             <p className="mt-4 text-gold-500 font-semibold text-right">
               — Paula Pequeno
