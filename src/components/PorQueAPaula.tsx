@@ -1,4 +1,6 @@
 import { m } from 'motion/react'
+import { trackEvent } from '@/lib/utils'
+import { CONFIG } from '@/lib/config'
 
 export default function PorQueAPaula() {
   const credenciais = [
@@ -86,6 +88,27 @@ export default function PorQueAPaula() {
             <p className="mt-4 text-gold-500 font-semibold text-right">
               — Paula Pequeno
             </p>
+          </m.div>
+
+          {/* CTA */}
+          <m.div
+            className="mt-10 flex flex-col items-center lg:items-start"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 1.2 }}
+          >
+            <button 
+              onClick={() => {
+                trackEvent('InitiateCheckout', { source: 'por_que_a_paula_cta', value: 1997 })
+                window.location.href = CONFIG.pagbank.fundador
+              }}
+              data-event-name="InitiateCheckout"
+              data-event-source="por_que_a_paula_cta"
+              className="w-full md:w-auto bg-gold-500 text-black-main font-bold text-lg px-8 py-4 rounded-md shadow-xl hover:scale-105 transition-transform duration-300 uppercase"
+            >
+              FAZER INSCRIÇÃO AGORA!
+            </button>
           </m.div>
 
         </div>

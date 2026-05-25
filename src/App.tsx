@@ -4,6 +4,7 @@ import { lazy, Suspense } from 'react'
 import StickyUrgencyBar from '@/components/StickyUrgencyBar'
 import Hero from '@/components/Hero'
 import Divider from '@/components/Divider'
+import FloatingWhatsApp from '@/components/FloatingWhatsApp'
 
 // Lazy (abaixo da dobra)
 const BlocoDor = lazy(() => import('@/components/BlocoDor'))
@@ -23,6 +24,7 @@ function App() {
   return (
     <>
       <StickyUrgencyBar />
+      <FloatingWhatsApp />
       <main>
         <Hero />
         <Suspense fallback={<div className="h-20" />}>

@@ -38,9 +38,14 @@ export default function StickyUrgencyBar() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const handleCTA = () => {
-    trackEvent('Lead', { source: 'sticky_bar' })
-    const link = CONFIG.whatsapp.getLink('Quero ser Atleta Fundador(a)!')
+  const handlePayment = () => {
+    trackEvent('InitiateCheckout', { source: 'sticky_bar', value: 1997 })
+    window.location.href = CONFIG.pagbank.fundador
+  }
+
+  const handleWhatsApp = () => {
+    trackEvent('Lead', { source: 'sticky_bar_whatsapp' })
+    const link = CONFIG.whatsapp.getLink('Quero tirar dúvidas sobre o Paula Pequeno Elite Camp!')
     window.open(link, '_blank')
   }
 
@@ -72,14 +77,25 @@ export default function StickyUrgencyBar() {
             )}
             
             {/* Direita */}
-            <button
-              onClick={handleCTA}
-              data-event-name="Lead"
-              data-event-source="sticky_bar"
-              className="bg-black-main text-gold-500 font-bold px-4 py-2 rounded text-xs md:text-sm hover:scale-105 transition-transform uppercase flex-shrink-0"
-            >
-              GARANTIR VAGA →
-            </button>
+            <div className="flex items-center gap-2 flex-shrink-0">
+              <button
+                onClick={handleWhatsApp}
+                data-event-name="Lead"
+                data-event-source="sticky_bar_whatsapp"
+                className="bg-green-600 text-white font-bold px-3 py-2 rounded text-xs md:text-sm hover:scale-105 transition-transform uppercase flex items-center gap-1"
+              >
+                <span className="hidden sm:inline">FALAR NO WHATSAPP</span>
+                <span className="sm:hidden">WHATSAPP</span>
+              </button>
+              <button
+                onClick={handlePayment}
+                data-event-name="InitiateCheckout"
+                data-event-source="sticky_bar"
+                className="bg-black-main text-gold-500 font-bold px-4 py-2 rounded text-xs md:text-sm hover:scale-105 transition-transform uppercase"
+              >
+                GARANTIR VAGA →
+              </button>
+            </div>
             
           </div>
         </m.div>

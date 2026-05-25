@@ -6,9 +6,8 @@ import { Medal, Trophy, MapPin, MessageCircle } from 'lucide-react'
 
 export default function Hero() {
   const handlePrimaryClick = () => {
-    trackEvent('Lead', { source: 'hero_primary' })
-    const link = CONFIG.whatsapp.getLink('Vim pelo site! Quero garantir minha vaga no Camp.')
-    window.open(link, '_blank')
+    trackEvent('InitiateCheckout', { source: 'hero_primary', value: 1997 })
+    window.location.href = CONFIG.pagbank.fundador
   }
 
   const handleSecondaryClick = () => {

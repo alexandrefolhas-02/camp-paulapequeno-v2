@@ -6,9 +6,8 @@ import { VAGAS_CONFIG } from '@/data/vagas'
 
 export default function KitAtleta() {
   const handleFundadorCTA = () => {
-    trackEvent('Lead', { source: 'kit_fundador_card' })
-    const link = CONFIG.whatsapp.getLink('Quero garantir minha vaga de Atleta Fundador(a)!')
-    window.open(link, '_blank')
+    trackEvent('InitiateCheckout', { source: 'kit_fundador_card', value: 1997 })
+    window.location.href = CONFIG.pagbank.fundador
   }
 
   const kitItems = [

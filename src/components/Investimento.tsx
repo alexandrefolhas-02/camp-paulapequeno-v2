@@ -114,7 +114,7 @@ export default function Investimento() {
                 data-event-source="investimento_fundador"
                 className="w-full flex items-center justify-center gap-2 bg-gold-500 hover:bg-gold-600 text-black font-bold text-base md:text-lg px-8 py-5 rounded-xl shadow-2xl shadow-gold-500/30 hover:scale-[1.02] transition-transform duration-300"
               >
-                <span>GARANTIR MINHA VAGA DE FUNDADOR(A)</span>
+                <span>REALIZAR INSCRIÇÃO</span>
                 <Sparkles className="w-5 h-5 flex-shrink-0" strokeWidth={2} />
               </button>
 
