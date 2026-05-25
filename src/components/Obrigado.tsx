@@ -102,19 +102,54 @@ function GoldParticles() {
 }
 
 export default function Obrigado() {
-  // Fire conversion events on mount
+  // Fire conversion events on mount + Advanced Matching com dados do PagSeguro (se disponíveis via URL)
   useEffect(() => {
-    trackEvent('Purchase', {
-      source: 'obrigado_page',
-      content_name: 'Paula Pequeno Elite Camp',
-      currency: 'BRL',
-    })
+    if (typeof window === 'undefined') return
 
-    // Also fire specific fbq Purchase if available
-    if (typeof window !== 'undefined' && (window as any).fbq) {
-      (window as any).fbq('track', 'Purchase', {
+    // Tenta capturar parâmetros que o PagSeguro pode devolver na URL
+    // Ex: /obrigado?email=user@email.com&phone=11999999999&name=João
+    const params = new URLSearchParams(window.location.search)
+    const email = params.get('email') || params.get('senderEmail') || ''
+    const phone = params.get('phone') || params.get('senderPhone') || ''
+    const firstName = params.get('firstName') || params.get('name') || ''
+
+    // Normaliza o telefone (remove tudo que não for número)
+    const phoneCleaned = phone.replace(/\D/g, '')
+
+    const advancedMatchingData: Record<string, string> = {}
+    if (email) advancedMatchingData.em = email.toLowerCase().trim()
+    if (phoneCleaned) advancedMatchingData.ph = phoneCleaned
+    if (firstName) advancedMatchingData.fn = firstName.toLowerCase().trim()
+
+    const fbq = (window as any).fbq
+
+    // Re-inicializa o Pixel com os dados do comprador (META fará o hash SHA-256 automaticamente)
+    if (fbq && Object.keys(advancedMatchingData).length > 0) {
+      fbq('init', '1956439545003321', advancedMatchingData)
+    }
+
+    // Dispara o evento de compra (conversão principal para otimização de campanha)
+    if (fbq) {
+      fbq('track', 'Purchase', {
         content_name: 'Paula Pequeno Elite Camp',
+        content_category: 'Sports Camp',
         currency: 'BRL',
+        value: 1997.00,
+      })
+    }
+
+    // GA4 — Purchase
+    if ((window as any).gtag) {
+      (window as any).gtag('event', 'purchase', {
+        transaction_id: params.get('reference') || params.get('code') || Date.now().toString(),
+        value: 1997.00,
+        currency: 'BRL',
+        items: [{
+          item_name: 'Paula Pequeno Elite Camp',
+          item_category: 'Sports Camp',
+          quantity: 1,
+          price: 1997.00,
+        }],
       })
     }
   }, [])
