@@ -11,17 +11,17 @@ export default function Transformacao() {
     {
       icon: <Brain className="w-8 h-8 text-gold-500" strokeWidth={1.5} />,
       title: "Mentalidade",
-      desc: "A psicologia da campeã. Como Paula manteve foco em 2 Olimpíadas. A mentalidade que transforma talento em conquista."
+      desc: "A psicologia da campeã. Como Paula manteve foco em 2 Olimpíadas. A mentalidade que transforma trabalho em conquista."
     },
     {
       icon: <Users className="w-8 h-8 text-gold-500" strokeWidth={1.5} />,
       title: "Conexões",
-      desc: "Networking com 59 outras atletas de alto nível do Brasil inteiro. Amizades e referências que duram para a vida."
+      desc: "Networking com outras 59 atletas do Brasil inteiro. Amizades e referências que duram para a vida."
     },
     {
       icon: <BookOpen className="w-8 h-8 text-gold-500" strokeWidth={1.5} />,
       title: "Memória",
-      desc: "Uma vivência que vira referência. A foto que vai na parede do quarto. A história que ela vai contar para sempre."
+      desc: "Uma vivência inesquecível. A foto que vai na parede do quarto, a história que será contada para sempre."
     }
   ]
 
@@ -36,12 +36,12 @@ export default function Transformacao() {
         </div>
         
         <h2 className="font-display font-bold text-3xl md:text-5xl text-white mt-4">
-          O que sua atleta<br />
-          leva pra casa.
+          O que os atletas<br />
+          levam pra casa.
         </h2>
         
         <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Mais do que medalhas, troféus ou certificados. 3 dias que mudam a forma dela enxergar o esporte — e si mesma.
+          Mais do que medalhas, troféus ou certificados... 3 dias que mudam a forma de enxergar o esporte.
         </p>
 
         <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
