@@ -31,7 +31,7 @@ export default function Estrutura() {
           </p>
           
           <p className="mt-4 text-base text-gray-300 leading-relaxed">
-            Tudo escolhido para que sua atleta — e você — vivam 3 dias dentro de um ambiente à altura do que essa imersão representa.
+            Tudo escolhido para que atletas e familiares vivam 3 dias dentro de um ambiente à altura do que essa imersão representa.
           </p>
 
           <div className="mt-8 p-5 border border-gold-600/30 bg-black-main rounded-xl flex gap-4 items-start shadow-md">

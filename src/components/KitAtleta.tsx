@@ -40,10 +40,10 @@ export default function KitAtleta() {
   ]
 
   const exclusivoFundador = [
-    "Numeração serial gravada (01/30 a 30/30)",
+    "Numeração serial gravada",
     "Foto oficial impressa autografada pela Paula",
     "Pin colecionável Fundador(a) 1ª Edição",
-    "Acesso a grupo exclusivo de Fundadores(as) no WhatsApp"
+    "Receba um vídeo exclusivo de boas-vindas da Paula"
   ]
 
   const bonusSorteio = [
@@ -159,7 +159,7 @@ export default function KitAtleta() {
           </p>
           
           <p className="mt-6 text-base text-gray-300 leading-relaxed">
-            Os primeiros 30 inscritos entram para a história como Atletas Fundadores(as) da 1ª edição do Paula Pequeno Elite Camp. Cada um recebe um kit com numeração serial única — de 01/30 a 30/30 — gravada na camisa e no passaporte.
+            Os primeiros 30 inscritos entram para a história como Atletas Fundadores(as) da 1ª edição do Paula Pequeno Elite Camp. Cada um recebe um kit com numeração serial única DE 01 A 30.
           </p>
 
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
