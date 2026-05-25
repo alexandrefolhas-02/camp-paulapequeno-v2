@@ -38,13 +38,18 @@ export default function Hero() {
           
           <div className="max-w-2xl">
             <h1 className="font-display font-black text-4xl md:text-5xl lg:text-6xl leading-[1.1] text-white text-balance">
-              Paula Pequeno - <span className="text-gold-500">Bicampeã Olímpica</span> abre as portas para <span className="text-gold-500">60 atletas</span>.
+              BEM-VINDOS! CHEGOU A HORA DE REALIZARMOS ESSE SONHO JUNTOS.
             </h1>
           </div>
           
-          <p className="text-gray-300 text-lg md:text-xl max-w-xl leading-relaxed">
-            Pela primeira vez, a bicampeã olímpica Paula Pequeno reúne, em 3 dias de imersão total, jovens atletas de 11 a 17 anos para uma vivência que vai muito além do treino.
-          </p>
+          <div className="space-y-4">
+            <p className="text-gray-300 text-lg md:text-xl max-w-xl leading-relaxed">
+              Quando idealizei o ELITE CAMP foi pensando em você. Quero compartilhar toda minha experiência e aprendizado nesses 3 dias que estaremos juntos. O que não vai faltar é energia, isso eu garanto!
+            </p>
+            <p className="text-gold-500 font-bold text-lg md:text-xl tracking-wide uppercase">
+              FAIXA ETÁRIA: 11 A 17 ANOS
+            </p>
+          </div>
           
           <div className="flex flex-wrap gap-6 text-sm md:text-base font-semibold text-white">
             <span className="flex items-center gap-2">
