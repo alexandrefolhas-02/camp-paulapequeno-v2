@@ -1,5 +1,4 @@
 import { lazy, Suspense } from 'react'
-import { LazyMotion, domAnimation } from 'motion/react'
 
 // Eager (acima da dobra)
 import StickyUrgencyBar from '@/components/StickyUrgencyBar'
@@ -23,7 +22,7 @@ const Footer = lazy(() => import('@/components/Footer'))
 
 function App() {
   return (
-    <LazyMotion features={domAnimation} strict>
+    <>
       <StickyUrgencyBar />
       <main>
         <Hero />
@@ -51,8 +50,9 @@ function App() {
       <Suspense fallback={null}>
         <Footer />
       </Suspense>
-    </LazyMotion>
+    </>
   )
 }
 
 export default App
+
