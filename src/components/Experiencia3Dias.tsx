@@ -83,13 +83,13 @@ export default function Experiencia3Dias() {
               <h3 className="font-display text-2xl md:text-3xl font-bold text-white mt-3">
                 {dia.titulo}
               </h3>
-              <p className="mt-3 text-sm md:text-base text-gray-300 leading-relaxed flex-grow">
+              <p className="mt-3 text-sm md:text-base text-gray-300 leading-relaxed">
                 {dia.desc}
               </p>
 
               <div className="my-6 border-t border-gold-600/30 w-full" />
 
-              <div>
+              <div className="flex-grow">
                 <div className="text-xs text-gold-500 font-semibold uppercase tracking-widest mb-3">
                   PROGRAMAÇÃO
                 </div>
