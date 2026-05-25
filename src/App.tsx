@@ -7,7 +7,6 @@ import Divider from '@/components/Divider'
 
 // Lazy (abaixo da dobra)
 const BlocoDor = lazy(() => import('@/components/BlocoDor'))
-const BlocoRevelacao = lazy(() => import('@/components/BlocoRevelacao'))
 const PorQueAPaula = lazy(() => import('@/components/PorQueAPaula'))
 const ParaQuemE = lazy(() => import('@/components/ParaQuemE'))
 const Transformacao = lazy(() => import('@/components/Transformacao'))
@@ -29,7 +28,6 @@ function App() {
         <Suspense fallback={<div className="h-20" />}>
           <Divider />
           <BlocoDor />
-          <BlocoRevelacao />
           <Divider />
           <PorQueAPaula />
           <ParaQuemE />
