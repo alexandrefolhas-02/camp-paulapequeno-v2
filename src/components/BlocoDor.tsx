@@ -4,9 +4,9 @@ import { CheckCircle2 } from 'lucide-react'
 export default function BlocoDor() {
   const beneficios = [
     "Treinos técnicos e táticos orientados com uma visão profissional.",
-    "Viver 3 dias com uma das maiores atletas de voleibol do mundo.",
-    "Aprender lições de liderança e vitória que formam campeões.",
-    "Receber dicas e orientações para conquistar todos seus sonhos no esporte.",
+    "Vivência de 3 dias comigo compartilhando conhecimentos.",
+    "Lições de liderança e disciplina que formam campeões.",
+    "Dicas e orientações para aprender a superar seus próprios limites.",
   ]
 
   return (
@@ -21,8 +21,8 @@ export default function BlocoDor() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          Se você está aqui,<br />
-          esta é sua chance!
+          O esporte transformou<br />
+          a minha vida.
         </m.h2>
 
         <m.div
@@ -33,13 +33,11 @@ export default function BlocoDor() {
           className="mt-12"
         >
           <p className="text-xl text-gray-300 text-center">
-            O esporte pode mudar a vida<br />
-            dos seus filhos!<br />
-            Ele(a) treina, se dedica, sonha.
+            E pode mudar a sua!
           </p>
 
           <p className="mt-10 text-gold-500 font-semibold italic text-center text-xl">
-            Mas você sente que falta algo a mais!
+            Quer algo a mais? Aqui teremos:
           </p>
         </m.div>
 

@@ -38,7 +38,7 @@ export default function Hero() {
           
           <div className="max-w-2xl">
             <h1 className="font-display font-black text-4xl md:text-5xl lg:text-6xl leading-[1.1] text-white text-balance">
-              BEM-VINDOS! CHEGOU A HORA DE REALIZARMOS ESSE SONHO JUNTOS.
+              <span className="text-gold-500">BEM-VINDOS!</span> CHEGOU A HORA DE REALIZARMOS ESSE SONHO JUNTOS.
             </h1>
           </div>
           
